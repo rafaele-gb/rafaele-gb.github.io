@@ -1,0 +1,58 @@
+:root {
+  --primary: rgb(58, 61, 65);
+  --secondary: rgb(101, 104, 107);
+  --text: rgb(255, 255, 255);
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: "heading-font";
+  src: url(../assets/fonts/couture-bld.otf);
+}
+
+@font-face {
+  font-family: "body-font";
+  src: url(../assets/fonts/SanFranciscoRegular.ttf);
+}
+
+body {
+  font-family: "body-font";
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: "heading-font";
+}
+
+.navbar-dark, .bg-dark {
+  background-color: var(--secondary) !important;
+}
+
+#personal {
+  background-color: var(--secondary);
+  margin: 16px 0px;
+  padding: 8px;
+}
+
+#projects {
+  border-style: solid;
+  border-color: var(--secondary);
+  border-width: 4px;
+  margin: 16px 0px;
+  padding: 8px;
+}
+
+.card {
+  background: var(--transparent);
+  border-width: 0px;
+  margin-bottom: 4px;
+}
+
+.card-img-top {
+  border-radius: 0px;
+}
+
+.card-body {
+  padding: 4px;
+}
