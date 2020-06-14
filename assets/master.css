@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "body-font";
-    src: url(../assets/fonts/SanFranciscoRegular.ttf);
+  src: url(../assets/fonts/SanFranciscoRegular.ttf);
 }
 
 body {
@@ -25,4 +25,25 @@ h1, h2, h3, h4, h5 {
 
 .h-xl {
   height: 400px;
+}
+
+/* SM */
+@media (min-width: 640px) {
+  .photo-stretch {
+    height: calc(400px + 0.5rem + 0.5rem);
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .photo-stretch {
+    height: calc(800px + 0.5rem + 0.5rem);
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+  .photo-stretch {
+    height: calc(800px + 0.5rem + 0.5rem);
+  }
 }
