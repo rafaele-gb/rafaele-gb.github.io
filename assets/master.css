@@ -23,6 +23,15 @@ h1, h2, h3, h4, h5 {
   object-position: 50% 50%;
 }
 
+.custom-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-navbar {
+  background-color: rgb(53, 84, 133);
+}
+
 .h-xl {
   height: 400px;
 }
@@ -32,12 +41,18 @@ h1, h2, h3, h4, h5 {
   .photo-stretch {
     height: calc(400px + 0.5rem + 0.5rem);
   }
+  .h-xl {
+    height: 400px;
+  }
 }
 
 /* MD */
 @media (min-width: 768px) {
   .photo-stretch {
-    height: calc(800px + 0.5rem + 0.5rem);
+    height: calc(800px + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem);
+  }
+  .h-xl {
+    height: 200px;
   }
 }
 
@@ -45,5 +60,8 @@ h1, h2, h3, h4, h5 {
 @media (min-width: 1024px) {
   .photo-stretch {
     height: calc(800px + 0.5rem + 0.5rem);
+  }
+  .h-xl {
+    height: 400px;
   }
 }
