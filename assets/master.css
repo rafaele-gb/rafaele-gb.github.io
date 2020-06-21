@@ -1,11 +1,16 @@
 @font-face {
   font-family: "heading-font";
-  src: url(../assets/fonts/couture-bld.otf);
+  src: url(../assets/fonts/SanFranciscoHeavy.ttf);
+}
+
+@font-face {
+  font-family: "heading-font2";
+  src: url(../assets/fonts/SanFranciscoMedium.ttf);
 }
 
 @font-face {
   font-family: "body-font";
-  src: url(../assets/fonts/SanFranciscoRegular.ttf);
+  src: url(../assets/fonts/Roboto-Thin.ttf);
 }
 
 body {
@@ -14,7 +19,11 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "heading-font";
-  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.custom-aboutme {
+  font-family: "heading-font2"
 }
 
 .custom-card {
@@ -23,13 +32,50 @@ h1, h2, h3, h4, h5 {
   object-position: 50% 50%;
 }
 
+bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project-6, bg-project-7 {
+  background-position: 50% 50% !important;
+  background-size: contain !important;
+}
+
+.bg-project-1 {
+  background-image: url(../img/project1.jpg);
+}
+
+.bg-project-2 {
+  background-image: url(../img/project2.jpg);
+}
+
+.bg-project-3 {
+  background-image: url(../img/project3.jpg);
+}
+
+.bg-project-4 {
+  background-image: url(../img/project4.jpg);
+}
+
+.bg-project-5 {
+  background-image: url(../img/project5.jpg);
+}
+
+.bg-project-6 {
+  background-image: url(../img/project6.jpg);
+}
+
+.bg-project-7 {
+  background-image: url(../img/project7.jpg);
+}
+
 .custom-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.custom-background {
+  background-color: rgb(30, 32, 34);
+}
+
 .custom-navbar {
-  background-color: rgb(53, 84, 133);
+  background-color: rgb(17, 19, 20);
 }
 
 .h-xl {
@@ -41,6 +87,7 @@ h1, h2, h3, h4, h5 {
   .photo-stretch {
     height: calc(400px + 0.5rem + 0.5rem);
   }
+
   .h-xl {
     height: 400px;
   }
@@ -51,6 +98,7 @@ h1, h2, h3, h4, h5 {
   .photo-stretch {
     height: calc(800px + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem);
   }
+
   .h-xl {
     height: 200px;
   }
@@ -61,6 +109,7 @@ h1, h2, h3, h4, h5 {
   .photo-stretch {
     height: calc(800px + 0.5rem + 0.5rem);
   }
+
   .h-xl {
     height: 400px;
   }

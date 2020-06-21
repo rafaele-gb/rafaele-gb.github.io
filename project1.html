@@ -10,17 +10,87 @@
   <link rel="stylesheet" href="assets/master.css">
 </head>
 
-<body class="bg-gray-900">
-  <section id="navbar">
-    <div class="flex mx-4 my-2">
-        <a href="./index.html">
-          <h1 class="text-4xl text-white">Rafael <span class="text-blue-400">Gonzalez</span></h1>
+<body class="custom-background bg-white font-sans leading-normal tracking-normal">
+  <section id="navbar" class="custom-navbar">
+    <nav class="flex items-center justify-between flex-wrap custom-navbar px-4 py-2 mb-4 w-full">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a class="text-white no-underline hover:text-white hover:no-underline" href="./index.html">
+          <img src="./img/LOGO.png" class="h-10 py-2 md:py-0">
         </a>
-    </div>
+      </div>
+
+      <div class="block lg:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block lg:pt-0" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="mailto:regonzbro@gmail.com">Get in touch</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="#">Résumé</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </section>
 
   <section id="body">
-    <h1>Project 1</h1>
+    <div class="carousel relative shadow-2xl bg-white">
+      <div class="carousel-inner relative overflow-hidden w-full">
+        <!--Slide 1-->
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item absolute opacity-0" style="height:50vh;">
+          <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">Slide 1</div>
+        </div>
+        <label for="carousel-3"
+          class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-2"
+          class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!--Slide 2-->
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:50vh;">
+          <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">Slide 2</div>
+        </div>
+        <label for="carousel-1"
+          class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-3"
+          class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!--Slide 3-->
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:50vh;">
+          <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+        </div>
+        <label for="carousel-2"
+          class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+        <label for="carousel-1"
+          class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+        <!-- Add additional indicators for each slide-->
+        <ol class="carousel-indicators">
+          <li class="inline-block mr-3">
+            <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+          </li>
+          <li class="inline-block mr-3">
+            <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+          </li>
+          <li class="inline-block mr-3">
+            <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+          </li>
+        </ol>
+
+      </div>
+    </div>
+
   </section>
 </body>
 
