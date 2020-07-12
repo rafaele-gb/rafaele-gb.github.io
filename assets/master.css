@@ -15,7 +15,7 @@
 
 body {
   font-family: "body-font";
-  line-height: 110%;
+  line-height: 120%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -81,6 +81,37 @@ bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project
 
 .h-xl {
   height: 400px;
+}
+
+.fa-instagram-square:hover {
+  color: rgb(170, 170, 170)
+}
+
+.fa-dribbble-square:hover {
+  color: rgb(170, 170, 170)
+}
+
+.fa-linkedin:hover {
+  color: rgb(170, 170, 170)
+}
+
+.fa-envelope-square:hover {
+  color: rgb(170, 170, 170)
+}
+
+.fa-phone-square:hover {
+  color: rgb(170, 170, 170)
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.follow {
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
 }
 
 /* SM */

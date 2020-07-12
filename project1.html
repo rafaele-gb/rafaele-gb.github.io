@@ -47,46 +47,66 @@
     </nav>
   </section>
 
-  <section id="body">
-    <div class="flex flex-wrap mx-2">
-      <div class="w-full md:w-3/4">
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
-          </div>
-        </div>
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
-          </div>
-        </div>
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
-          </div>
-        </div>
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
-          </div>
-        </div>
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
-          </div>
-        </div>
-        <div class="w-full px-2">
-          <div class="photo-stretch">
-            <img src="./img/render1.png">
+  <section id="body" class="text-white">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/3 lg:w-1/4 mb-4">
+        <div class="follow">
+          <div class="pl-4 pr-4 md:pr-2">
+            <h1 class="text-4xl text-white">Chicago Project</h1>
+            <hr>
+            <p><span class="text-blue-400">Location:</span> Chicago, Illinois</p>
+            <p><span class="text-blue-400">Year:</span> 2020</p>
+            <p><span class="text-blue-400">Client:</span> Accenture, LLP.</p>
+            <p><span class="text-blue-400">Status:</span> Completed, June 2020</p>
+            <hr>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu non diam phasellus. Ac turpis egestas sed tempus urna et.
+              Sit amet nulla
+              facilisi morbi tempus iaculis urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut tristique et egestas quis ipsum suspendisse ultrices. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nam at
+              lectus
+              urna duis. Integer quis auctor elit sed vulputate mi sit amet. Nibh venenatis cras sed felis eget velit. Aliquam sem et tortor consequat id porta nibh venenatis cras. Mauris cursus mattis molestie a iaculis at erat pellentesque
+              adipiscing.
+            </p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu non diam phasellus. Ac turpis egestas sed tempus urna et.
+              Sit amet nulla
+              facilisi morbi tempus iaculis urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut tristique et egestas quis ipsum suspendisse ultrices. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nam at
+              lectus
+              urna duis. Integer quis auctor elit sed vulputate mi sit amet. Nibh venenatis cras sed felis eget velit. Aliquam sem et tortor consequat id porta nibh venenatis cras. Mauris cursus mattis molestie a iaculis at erat pellentesque
+              adipiscing.
+            </p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu non diam phasellus. Ac turpis egestas sed tempus urna et.
+              Sit amet nulla
+              facilisi morbi tempus iaculis urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut tristique et egestas quis ipsum suspendisse ultrices. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nam at
+              lectus
+              urna duis. Integer quis auctor elit sed vulputate mi sit amet. Nibh venenatis cras sed felis eget velit. Aliquam sem et tortor consequat id porta nibh venenatis cras. Mauris cursus mattis molestie a iaculis at erat pellentesque
+              adipiscing.
+            </p>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu non diam phasellus. Ac turpis egestas sed tempus urna et.
+              Sit amet nulla
+              facilisi morbi tempus iaculis urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut tristique et egestas quis ipsum suspendisse ultrices. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nam at
+              lectus
+              urna duis. Integer quis auctor elit sed vulputate mi sit amet. Nibh venenatis cras sed felis eget velit. Aliquam sem et tortor consequat id porta nibh venenatis cras. Mauris cursus mattis molestie a iaculis at erat pellentesque
+              adipiscing.
+            </p>
+
           </div>
         </div>
       </div>
-    </div>
-    <div class="w-full md:w-1/4">
-      <h1 class="text-3xl text-white"> I'm <span class="custom-aboutme">Rafael González,</span></h1>
-      <h1 class="text-3xl text-white">a future architect.</h1>
+      <div class="w-full md:w-2/3 lg:w-3/4 pl-4 md:pl-2 pr-4 mb-4">
+        <img src="./img/render1.png" class="w-full mb-4">
+        <img src="./img/render1.png" class="w-full mb-4">
+        <img src="./img/render1.png" class="w-full mb-4">
+        <img src="./img/render1.png" class="w-full mb-4">
+        <img src="./img/render1.png" class="w-full mb-4">
+      </div>
     </div>
   </section>
+
+  <script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function() {
+      document.getElementById("nav-content").classList.toggle("hidden");
+    }
+  </script>
 </body>
 
 </html>
