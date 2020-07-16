@@ -13,6 +13,11 @@
   src: url(../assets/fonts/Roboto-Thin.ttf);
 }
 
+@font-face {
+  font-family: "body-font2";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
 body {
   font-family: "body-font";
   line-height: 120%;
@@ -23,8 +28,12 @@ h1, h2, h3, h4, h5 {
   line-height: 100%;
 }
 
-.custom-aboutme {
+.custom-heading {
   font-family: "heading-font2"
+}
+
+.custom-body2 {
+  font-family: "body-font2"
 }
 
 .custom-card {
@@ -33,37 +42,41 @@ h1, h2, h3, h4, h5 {
   object-position: 50% 50%;
 }
 
+.custom-logo {
+  background-color: rgb(83, 98, 108);
+}
+
 bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project-6, bg-project-7 {
   background-position: 50% 50% !important;
   background-size: contain !important;
 }
 
 .bg-project-1 {
-  background-image: url(../img/project1.jpg);
+  background-image: url(../img-home/project1.jpg);
 }
 
 .bg-project-2 {
-  background-image: url(../img/project2.jpg);
+  background-image: url(../img-home/project2.jpg);
 }
 
 .bg-project-3 {
-  background-image: url(../img/project3.jpg);
+  background-image: url(../img-home/project3.jpg);
 }
 
 .bg-project-4 {
-  background-image: url(../img/project4.jpg);
+  background-image: url(../img-home/project4.jpg);
 }
 
 .bg-project-5 {
-  background-image: url(../img/project5.jpg);
+  background-image: url(../img-home/project5.jpg);
 }
 
 .bg-project-6 {
-  background-image: url(../img/project6.jpg);
+  background-image: url(../img-home/project6.jpg);
 }
 
 .bg-project-7 {
-  background-image: url(../img/project7.jpg);
+  background-image: url(../img-home/project7.jpg);
 }
 
 .custom-overflow {
@@ -77,6 +90,9 @@ bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project
 
 .custom-navbar {
   background-color: rgb(17, 19, 20);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .h-xl {
@@ -108,10 +124,21 @@ hr {
   margin-bottom: 10px;
 }
 
-.follow {
-  position: sticky;
-  top: 0;
+.logo-position {
+  height: 8rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 9.5rem;
+}
+
+.sidebar {
+  width: 460px;
   position: -webkit-sticky;
+  position: sticky;
+  z-index: -1;
+  top: 80px;
+  left: 5px;
+  overflow-x: hidden;
 }
 
 /* SM */
