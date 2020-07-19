@@ -84,6 +84,11 @@ bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project
   text-overflow: ellipsis;
 }
 
+.custom-overflow2 {
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
 .custom-background {
   background-color: rgb(30, 32, 34);
 }
@@ -124,15 +129,13 @@ hr {
   margin-bottom: 10px;
 }
 
-.logo-position {
+/* .logo-position {
   height: 8rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   margin-left: 9.5rem;
-}
-
+} */
 .sidebar {
-  width: 460px;
   position: -webkit-sticky;
   position: sticky;
   z-index: -1;
@@ -150,6 +153,11 @@ hr {
   .h-xl {
     height: 400px;
   }
+
+  .h-aboutme {
+    height: calc(400px + 0.5rem + 0.5rem);
+    width: 100%;
+  }
 }
 
 /* MD */
@@ -161,6 +169,11 @@ hr {
   .h-xl {
     height: 200px;
   }
+
+  .h-aboutme {
+    height: calc(800px + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem + 0.5rem);
+    width: 100%;
+  }
 }
 
 /* LG */
@@ -171,5 +184,10 @@ hr {
 
   .h-xl {
     height: 400px;
+  }
+
+  .h-aboutme {
+    height: calc(800px + 0.5rem + 0.5rem);
+    width: 100%;
   }
 }
