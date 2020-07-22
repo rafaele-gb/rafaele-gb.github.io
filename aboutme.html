@@ -53,55 +53,72 @@
   </section>
 
   <section id="body">
-    <div class="flex flex-wrap mx-4">
-      <div class="w-full md:w-1/5">
-        <div class="w-full p-1">
-          <div class="photo-stretch">
-            <img src="./img-home/PROFILE.jpg" class="pb-2 custom-card h-full">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/4 lg:w-1/5">
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <div class="photo-stretch">
+              <img src="./img-home/PROFILE.jpg" class="pb-2 custom-card h-full">
+            </div>
           </div>
         </div>
       </div>
-      <div class="w-full md:w-1/5">
-        <div class="flex flex-wrap px-1">
-          <div class="bg-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-click="name = 'cesar'">
-            <p class="text-3xl">Click to reveal! {{name}}</p>
+
+      <div class="w-full md:w-3/4 lg:w-4/5">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="text-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2">
+              <p class="text-3xl">Biography</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
+                dignissim erat sit
+                amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
+                amet
+                efficitur nunc ullamcorper at.</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/5">
-        <div class="flex flex-wrap px-1">
-          <div class="border-2 border-white h-aboutme py-5 px-5 custom-overflow2">
-            <h1 class="md:text-2xl lg:text-3xl text-3xl text-white"> I'm <span class="custom-heading">Rafael González,</span></h1>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
-              dignissim erat sit
-              amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
-              amet
-              efficitur nunc ullamcorper at.</p>
+
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="bg-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(1)" ng-if="!open1">
+              <p class="text-3xl">Click to reveal!</p>
+            </div>
+            <div class="text-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-if="open1">
+              <p class="text-3xl">Biography</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
+                dignissim erat sit
+                amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
+                amet
+                efficitur nunc ullamcorper at.</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/5">
-        <div class="flex flex-wrap px-1">
-          <div class="border-2 border-white h-aboutme py-5 px-5 custom-overflow2">
-            <h1 class="md:text-2xl lg:text-3xl text-3xl text-white"> I'm <span class="custom-heading">Rafael González,</span></h1>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
-              dignissim erat sit
-              amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
-              amet
-              efficitur nunc ullamcorper at.</p>
+
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="bg-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(2)" ng-if="!open2">
+              <p class="text-3xl">Click to reveal!</p>
+            </div>
+            <div class="text-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-if="open2">
+              <p class="text-3xl">Biography</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
+                dignissim erat sit
+                amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
+                amet
+                efficitur nunc ullamcorper at.</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/5">
-        <div class="flex flex-wrap px-1">
-          <div class="border-2 border-white h-aboutme py-5 px-5 custom-overflow2">
-            <h1 class="md:text-2xl lg:text-3xl text-3xl text-white"> I'm <span class="custom-heading">Rafael González,</span></h1>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
-              dignissim erat sit
-              amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
-              amet
-              efficitur nunc ullamcorper at.</p>
+
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="bg-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(3)" ng-if="!open3">
+              <p class="text-3xl">Click to reveal!</p>
+            </div>
+            <div class="text-white border-2 border-white h-aboutme py-5 px-5 custom-overflow2" ng-if="open3">
+              <p class="text-3xl">Biography</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a mauris et elit eleifend ornare at at purus. Sed dignissim fermentum purus feugiat gravida. Praesent tincidunt blandit vestibulum. Donec placerat
+                dignissim erat sit
+                amet maximus. Nam mollis sodales dui, ut lobortis ipsum fermentum vitae. Nam non viverra augue. Nunc vel purus consectetur, ultrices ipsum non, elementum ex. Morbi placerat sagittis elit in efficitur. Vestibulum mollis enim sem, sit
+                amet
+                efficitur nunc ullamcorper at.</p>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
