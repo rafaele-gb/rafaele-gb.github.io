@@ -1,4 +1,4 @@
-var app = angular.module("rafael", []);
+var app = angular.module("Javascript", []);
 app.controller("ctrl", function($scope) {
   $scope.open1 = false;
   $scope.open2 = false;
