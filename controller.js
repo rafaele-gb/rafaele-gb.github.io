@@ -1,3 +1,4 @@
+/* about-me cards */
 var app = angular.module("Javascript", []);
 app.controller("ctrl", function($scope) {
   $scope.open1 = false;

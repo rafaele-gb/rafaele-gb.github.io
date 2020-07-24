@@ -37,7 +37,7 @@
             <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="./index.html">Home</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="./aboutme.html">About me</a>
+            <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="./about-me.html">About me</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-gray-400 border-2 border-gray-400 hover:bg-gray-400 hover:text-black px-4 py-1 my-2" href="mailto:regonzbro@gmail.com">Get in touch</a>
@@ -65,8 +65,13 @@
       <div class="w-full md:w-3/4 lg:w-4/5">
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/2 lg:w-1/4 p-1">
-            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(1)" ng-if="!open1">
-              <p class="text-3xl text-white">Click to reveal!</p>
+            <div class="bg-about h-aboutme py-5 px-16 custom-overflow2 cursor" ng-click="revealCard(1)" ng-if="!open1">
+              <p class="text-center text-white text-card">Click to see
+                <span class="custom-heading">my</span>
+              </p>
+              <div class="typewriter1">
+                <h1 class="text-white text-4xl text-center">Biography</h1>
+              </div>
             </div>
             <div class="text-white border-4 custom-border h-aboutme py-5 px-5 custom-overflow2" ng-if="open1">
               <p class="text-3xl">Biography</p>
@@ -79,8 +84,13 @@
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 p-1">
-            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(2)" ng-if="!open2">
-              <p class="text-3xl text-white">Click to reveal!</p>
+            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2 cursor" ng-click="revealCard(2)" ng-if="!open2">
+              <p class="text-center text-white text-card">Click to see
+                <span class="custom-heading">my</span>
+              </p>
+              <div class="typewriter2">
+                <h1 class="text-white text-4xl text-center">Experience</h1>
+              </div>
             </div>
             <div class="text-white border-4 custom-border h-aboutme py-5 px-5 custom-overflow2" ng-if="open2">
               <p class="text-3xl">Biography</p>
@@ -93,8 +103,13 @@
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 p-1">
-            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(3)" ng-if="!open3">
-              <p class="text-3xl text-white">Click to reveal!</p>
+            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2 cursor" ng-click="revealCard(3)" ng-if="!open3">
+              <p class="text-center text-white text-card">Click to see
+                <span class="custom-heading">my</span>
+              </p>
+              <div class="typewriter3">
+                <h1 class="text-white text-4xl text-center">Capabilities</h1>
+              </div>
             </div>
             <div class="text-white border-4 custom-border h-aboutme py-5 px-5 custom-overflow2" ng-if="open3">
               <p class="text-3xl">Biography</p>
@@ -107,8 +122,13 @@
           </div>
 
           <div class="w-full md:w-1/2 lg:w-1/4 p-1">
-            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2" ng-click="revealCard(4)" ng-if="!open4">
-              <p class="text-3xl text-white">Click to reveal!</p>
+            <div class="bg-about h-aboutme py-5 px-5 custom-overflow2 cursor" ng-click="revealCard(4)" ng-if="!open4">
+              <p class="text-center text-white text-card">Click to see
+                <span class="custom-heading">my</span>
+              </p>
+              <div class="typewriter4">
+                <h1 class="text-white text-4xl text-center">Interests</h1>
+              </div>
             </div>
             <div class="text-white border-4 custom-border h-aboutme py-5 px-5 custom-overflow2" ng-if="open4">
               <p class="text-3xl">Biography</p>
@@ -124,6 +144,49 @@
       </div>
     </div>
   </section>
+
+  <section id="footer">
+    <div class="flex px-3 py-1">
+      <div class="w-full">
+        <div class="mb-1">
+
+          <a href="http://instagram.com">
+            <span class="pr-1">
+              <i class="fab fa-instagram-square fa-lg text-gray-400"></i>
+            </span>
+          </a>
+          <a href="http://instagram.com">
+            <span class="pl-2 pr-1">
+              <i class="fab fa-dribbble-square fa-lg text-gray-400"></i>
+            </span>
+          </a>
+          <a href="http://instagram.com">
+            <span class="pl-2 pr-1">
+              <i class="fab fa-linkedin fa-lg text-gray-400"></i>
+            </span>
+          </a>
+          <a href="mailto:regonzbro@gmail.com">
+            <span class="pl-2 pr-1">
+              <i class="fas fa-envelope-square fa-lg text-gray-400"></i>
+            </span>
+          </a>
+          <a href="tel:+1-541-864-9963">
+            <span class="pl-2 pr-1">
+              <i class="fas fa-phone-square fa-lg text-gray-400 "></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function() {
+      document.getElementById("nav-content").classList.toggle("hidden");
+    }
+  </script>
 
 </body>
 
