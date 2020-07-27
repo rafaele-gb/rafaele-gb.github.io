@@ -130,14 +130,6 @@ bg-project-1, bg-project-2, bg-project-3, bg-project-4, bg-project-5, bg-project
   color: rgb(255, 255, 255);
 }
 
-.fa-arrow-alt-circle-left:hover {
-  color: rgb(255, 255, 255);
-}
-
-.fa-arrow-alt-circle-right:hover {
-  color: rgb(255, 255, 255);
-}
-
 /* line */
 hr {
   margin-top: 10px;

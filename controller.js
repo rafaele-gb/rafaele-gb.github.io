@@ -6,9 +6,6 @@ app.controller("ctrl", function($scope) {
   $scope.open3 = false;
   $scope.open4 = false;
 
-  $scope.content = true;
-  $scope.photoNum = 0;
-
   $scope.revealCard = function(cardNumber) {
     if (cardNumber == 1) {
       $scope.open1 = true;
@@ -39,8 +36,4 @@ app.controller("ctrl", function($scope) {
     }
   }
 
-  $scope.openCarousel = function(photoNumber){
-    $scope.content = false;
-    $scope.photoNum = photoNumber;
-  }
 });
